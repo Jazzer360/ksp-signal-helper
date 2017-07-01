@@ -1,1 +1,0 @@
-# ksp-signal-helper
