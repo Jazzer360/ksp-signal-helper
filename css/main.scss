@@ -1,0 +1,56 @@
+---
+---
+@charset "utf-8";
+
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+
+$xs: 767px;
+$sm: 991px;
+$md: 1199px;
+
+$effects: (
+    rads,
+    health,
+    ap,
+    damage_resist,
+    energy_resist,
+    rad_resist,
+    max_health,
+    max_ap,
+    regen_health,
+    strength,
+    perception,
+    endurance,
+    charisma,
+    intelligence,
+    agility,
+    luck,
+    slow_time,
+    damage,
+    melee_damage,
+    carry_weight,
+    underwater_breathing,
+    cure_addictions,
+    xp,
+    grenade,
+    syringe,
+    mine);
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "custom";
